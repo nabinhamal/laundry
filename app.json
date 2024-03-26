@@ -23,6 +23,7 @@
         "backgroundColor": "#ffffff"
       }
     },
+    "scheme": "laundry",
     "web": {
       "favicon": "./assets/favicon.png"
     }
