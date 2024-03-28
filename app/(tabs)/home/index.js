@@ -119,6 +119,7 @@ import {
                 }}
               >
                 <Pressable
+                onPress={() => router.push("/home/address")}
                   style={{
                     backgroundColor: "#FEBE10",
                     paddingHorizontal: 10,
@@ -348,6 +349,7 @@ import {
             Order Within 15 mins to catch this pickUp Slot
           </Text>
           <Pressable
+          onPress={() => router.push("/basket")}
             style={{
               borderColor: "#034694",
               paddingHorizontal: 10,
