@@ -4,9 +4,9 @@ export default function Layout(){
     return (
         <>
         <Stack screenOptions={{headerShown:false}}>
-            <Stack.Screen name="index"/>
-            <Stack.Screen name="address"/>
-            <Stack.Screen name="add"/>
+            <Stack.Screen name="login"/>
+            <Stack.Screen name="register"/>
+            
         </Stack>
         </>
     )

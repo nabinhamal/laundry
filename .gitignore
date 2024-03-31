@@ -15,10 +15,10 @@ web-build/
 *.p12
 *.key
 *.mobileprovision
-
+*.env
 # Metro
 .metro-health-check*
-
+.env*.local
 # debug
 npm-debug.*
 yarn-debug.*

@@ -2,11 +2,13 @@ import { Tabs } from "expo-router";
 import { Feather } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { Provider } from "react-redux";
+import store from "../../store";
 
 
 export default function Layout() {
   return (
-   
+   <Provider store={store}>
       <Tabs>
         <Tabs.Screen
           name="home"
@@ -59,5 +61,6 @@ export default function Layout() {
           }}
         />
       </Tabs>
+      </Provider>
   );
 }
