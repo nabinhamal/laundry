@@ -20,19 +20,19 @@ import {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const router = useRouter();
-    useEffect(() => {
-      const checkLoginStatus = async () => {
-        try {
-          const token = await AsyncStorage.getItem("auth");
-          if (token) {
-            router.replace("/(tabs)/home");
-          }
-        } catch (error) { 
-          console.log("Error", error);
-        }
-      };
-      checkLoginStatus();
-    }, []);
+    // useEffect(() => {
+    //   const checkLoginStatus = async () => {
+    //     try {
+    //       const token = await AsyncStorage.getItem("auth");
+    //       if (token) {
+    //         router.replace("/(tabs)/home");
+    //       }
+    //     } catch (error) { 
+    //       console.log("Error", error);
+    //     }
+    //   };
+    //   checkLoginStatus();
+    // }, []);
     const handleLogin = () => {
       signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
         const user = userCredential.user;

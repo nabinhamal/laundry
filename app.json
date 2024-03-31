@@ -1,7 +1,13 @@
 {
   "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "57df9332-2132-488f-b421-e834b14555ce"
+      }
+    },
     "name": "laundry",
     "slug": "laundry",
+    "description": "This is a laundry app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,12 +21,14 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.laundry"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff",
+        "package": "com.laundry"
       }
     },
     "scheme": "laundry",
