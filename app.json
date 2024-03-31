@@ -1,10 +1,5 @@
 {
   "expo": {
-    "extra": {
-      "eas": {
-        "projectId": "57df9332-2132-488f-b421-e834b14555ce"
-      }
-    },
     "name": "laundry",
     "slug": "laundry",
     "description": "This is a laundry app",
@@ -29,11 +24,25 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff",
         "package": "com.laundry"
-      }
+      },
+      "package": "com.laundry"
     },
     "scheme": "laundry",
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-updates",
+        {
+          "username": "d3viil"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "49c7534b-7769-46e7-bd89-d8bd9e6a9c2d"
+      }
     }
   }
 }
